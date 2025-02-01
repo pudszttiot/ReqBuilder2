@@ -52,15 +52,19 @@ ReqBuilder 2 is a Python tool designed to easily generate a `requirements.txt` f
    ```
 
 ## Usage
-1. **Run the tool using the below command:**
+1. Run the tool using the below command:
 
    ```bash
    python ReqBuilder2.py
    ```
 2. Click **Select Project Directory** and choose your Python project folder.
+
 3. (Optional) Enter a custom output path for `requirements.txt`.
+
 4. Click **Generate requirements.txt**.
+
 5. The output log will indicate success or errors.
+
 6. Use **Check for Updates** to ensure you’re on the latest version.
 
 ## Features
