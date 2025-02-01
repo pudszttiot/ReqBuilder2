@@ -65,9 +65,9 @@ ReqBuilder 2 is a Python tool designed to easily generate a `requirements.txt` f
 
 5. The output log box will show success or errors.
 
-6. (Optional) Use the **Clear Output** button to reset the status area and clear all logs.
+6. (Optional) Click the **Clear Output** button to reset the status area and clear all logs.
 
-7. (Optional) Use the **Check for Updates** button to verify if a newer version of ReqBuilder 2 is available or to ensure you’re on the latest version.
+7. (Optional) Click the **Check for Updates** button to verify if a newer version of ReqBuilder 2 is available or to ensure you’re on the latest version.
 
 ## Features
 
