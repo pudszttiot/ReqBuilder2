@@ -11,7 +11,7 @@
 ReqBuilder 2
 
 
-[![SourceForge - Download Now](https://img.shields.io/badge/SourceForge-Download_Now-2E8B57?logo=sourceforge)](https://sourceforge.net/projects/reqbuilder/files/latest/download)
+[![SourceForge - Download Now](https://img.shields.io/badge/SourceForge-Download_Now-2E8B57?logo=sourceforge)](https://sourceforge.net/projects/reqbuilder2/files/latest/download)
 
 [![README - Documentation](https://img.shields.io/badge/README-Documentation-2ea44f?logo=readthedocs)](https://pudszttiot.github.io/REPONAME)
 
