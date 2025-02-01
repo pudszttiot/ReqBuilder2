@@ -43,7 +43,7 @@ ReqBuilder 2 is a Python tool designed to easily generate a `requirements.txt` f
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/pudszttiot/**INSERT REPO URL**
+   git clone https://github.com/pudszttiot/ReqBuilder2.git
    ```
 
 2. **Install dependencies:**
@@ -55,7 +55,7 @@ ReqBuilder 2 is a Python tool designed to easily generate a `requirements.txt` f
 - **Run the tool using the below command:**
 
    ```bash
-   python run.py
+   python ReqBuilder2.py
    ```
 
 ## Features
