@@ -71,8 +71,6 @@ ReqBuilder 2 is a Python tool designed to easily generate a `requirements.txt` f
 
 ## Features
 
-<br>
-
 <ins>**Graphical User Interface**:</ins>
    - No need to use the command line easily select your project directory.
    
