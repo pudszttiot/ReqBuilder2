@@ -1,6 +1,7 @@
 import sys
 import subprocess
 import requests
+import webbrowser
 from packaging import version
 from PyQt5.QtWidgets import (
     QApplication, QWidget, QVBoxLayout, QPushButton,
@@ -184,14 +185,14 @@ class PipreqsGUI(QWidget):
     def notify_update(self, latest_version, update_url):
         """Notify the user about a new version."""
         if latest_version:
-            msg = f"A newer version (v{latest_version}) is available!\nDownload here: {update_url}"
-            self.status_label.setText(msg)
-            self.output_text.append(msg)
-            
-            # Show notification dialog
-            QMessageBox.information(self, "Update Available", msg)
+            msg = f"A newer version (v{latest_version}) is available!\nDo you want to download it now?"
+            reply = QMessageBox.question(self, "Update Available", msg, QMessageBox.Yes | QMessageBox.No, QMessageBox.Yes)
+            if reply == QMessageBox.Yes:
+                webbrowser.open(update_url)
         else:
-            self.status_label.setText("You're using the latest version.")  # No updates available
+            self.status_label.setText("You're using the latest version.")
+            self.status_label.setStyleSheet("QLabel#status_label { color: #BF40BF; }")
+
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
