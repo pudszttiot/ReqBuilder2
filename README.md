@@ -62,19 +62,25 @@ ReqBuilder 2 is a Python tool designed to easily generate a `requirements.txt` f
 
 <br>
 
-<ins>**FEATURE 1**:</ins>
-   - FEATURE DESCRIPTION.
+<ins>**Graphical User Interface**:</ins>
+   - No need to use the command line easily select your project directory.
    
-<ins>**FEATURE 2**:</ins>
-   - FEATURE DESCRIPTION.
+<ins>**Select Project Directory**:</ins>
+   - Choose your project folder to start generating the `requirements.txt`.
    
-<ins>**FEATURE 3**:</ins>
-   - FEATURE DESCRIPTION.
+<ins>**Custom Output Path**:</ins>
+   - Optionally specify where to save the `requirements.txt` file.
+
+<ins>**Generate requirements.txt**</ins>
+   - Automatically generates a `requirements.txt` file based on the project's imports.
+
+<ins>**Check for Updates**:</ins>
+   - Easily check for new updates and download the latest version from GitHub.
 
 
 ## Contributing
 
-Contributions are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or create a pull request on [GitHub](https://github.com/pudszttiot/INSERT_REPO_URL).
+Contributions are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or create a pull request on [GitHub](https://github.com/pudszttiot/ReqBuilder2).
 
 ## Contact
 
