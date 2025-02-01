@@ -1,10 +1,11 @@
 import sys
 import subprocess
 import requests
+import webbrowser
 from packaging import version
 from PyQt5.QtWidgets import (
     QApplication, QWidget, QVBoxLayout, QPushButton,
-    QFileDialog, QLabel, QTextEdit, QLineEdit, QMessageBox
+    QFileDialog, QLabel, QTextEdit, QLineEdit, QMessageBox, QDesktopWidget
 )
 from PyQt5.QtGui import QPixmap, QIcon
 from PyQt5.QtCore import QThread, pyqtSignal, Qt
@@ -54,7 +55,6 @@ class PipreqsWorker(QThread):
                 self.status_signal.emit(f"❌ Error: {process.stderr.strip()}")
         except Exception as e:
             self.status_signal.emit(f"⚠️ Exception: {str(e)}")
-
 
 class PipreqsGUI(QWidget):
     """Main GUI for pipreqs tool."""
@@ -144,22 +144,21 @@ class PipreqsGUI(QWidget):
 
     def check_for_updates(self):
         """Check if a new version is available when the button is clicked."""
-        self.status_label.setText("Checking for updates...")  # Only show when button is clicked
+        self.status_label.setText("Checking for updates...")
         self.update_checker = UpdateChecker()
         self.update_checker.update_signal.connect(self.notify_update)
         self.update_checker.start()
 
     def notify_update(self, latest_version, update_url):
-        """Notify the user about a new version."""
+        """Prompt the user when a new update is available."""
         if latest_version:
-            msg = f"A newer version (v{latest_version}) is available!\nDownload here: {update_url}"
-            self.status_label.setText(msg)
-            self.output_text.append(msg)
-            
-            # Show notification dialog
-            QMessageBox.information(self, "Update Available", msg)
+            msg = f"A newer version (v{latest_version}) is available!\nDo you want to download it now?"
+            reply = QMessageBox.question(self, "Update Available", msg, QMessageBox.Yes | QMessageBox.No, QMessageBox.Yes)
+            if reply == QMessageBox.Yes:
+                webbrowser.open(update_url)
         else:
-            self.status_label.setText("You're using the latest version.")  # No updates available
+            self.status_label.setText("You're using the latest version.")
+            self.status_label.setStyleSheet("QLabel#status_label { color: #BF40BF; }")
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
