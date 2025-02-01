@@ -8,7 +8,7 @@
 
 ---
 
-PROJECT TITLE
+ReqBuilder 2
 
 
 [![SourceForge - Download Now](https://img.shields.io/badge/SourceForge-Download_Now-2E8B57?logo=sourceforge)](https://sourceforge.net/projects/reqbuilder/files/latest/download)
