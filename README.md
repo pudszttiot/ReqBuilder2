@@ -34,7 +34,7 @@ ReqBuilder 2 is a Python tool designed to easily generate a `requirements.txt` f
 ## Screenshots
 
 <p align="center"> 
-<img width="400" height="380" src="INSERT IMAGE URL" border="0">
+<img width="400" height="600" src="https://raw.githubusercontent.com/pudszttiot/ReqBuilder2/refs/heads/main/Images/ReqBuilder2_Demo.gif" border="0">
   &nbsp;
 <img width="400" height="380" src="INSERT IMAGE URL" border="0">
   </p>
