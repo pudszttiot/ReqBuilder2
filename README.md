@@ -1,7 +1,7 @@
   <a name="top"></a>
 
 <p align="center">
-  <img width="660" height="500" src="https://raw.githubusercontent.com/pudszttiot/ReqBuilder2/refs/heads/main/Images/ReqBuilder2_2.png">
+  <img width="500" height="660" src="https://raw.githubusercontent.com/pudszttiot/ReqBuilder2/refs/heads/main/Images/ReqBuilder2_2.png">
 </p>
 
 <h2 align="center">
