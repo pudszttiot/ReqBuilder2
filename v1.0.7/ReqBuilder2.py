@@ -73,7 +73,7 @@ class PipreqsGUI(QWidget):
     def init_ui(self):
         """Initialize the GUI components."""
         self.setWindowTitle(f'ReqBuilder 2 (v{__version__})')
-        self.setWindowIcon(QIcon(r"../Images/ReqBuilder_2_Logo.png"))
+        self.setWindowIcon(QIcon(r"../Images/ReqBuilder2_Logo.png"))
         self.setFixedSize(450, 850)  # Prevent resizing of the window
 
         layout = QVBoxLayout()
